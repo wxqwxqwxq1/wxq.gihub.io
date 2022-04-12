@@ -8,3 +8,5 @@ document.getElementById("chkBtn").addEventListener("click",
      else {
      alert('抱歉，用户名或密码错误!');}
     })
+
+    
