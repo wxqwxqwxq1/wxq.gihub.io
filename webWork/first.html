@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>  
+<head>  
+<title>实验一-wxq</title>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <style type="text/css">
+		.one{
+			margin:0 auto;
+			width:20px;
+			line-height:24px;
+			border:1px solid #333;
+			text-align:center;
+		}
+		.two{
+			height:auto;
+			width:auto;
+			
+			text-align:left;
+		}
+    	table {
+    		border-collapse: collapse;
+    	}
+
+    	table, tr, td {
+    		border: 1px solid black;
+    	}
+
+    	td {
+    		text-align: center;
+    		height: 50px; /*这里需要自己调整，根据自己的需求调整高度*/
+    		position: relative;
+    	}
+
+    		td[class=first] {
+    			width: 100px;
+    		}
+
+    			td[class=first]:before { /*伪元素*/
+    				content: "";
+    				position: absolute;
+    				width: 1px; /*宽度为1相当于一条线*/
+    				height: 104px;
+    				top: 0;
+    				left: 0;
+    				background-color: #000;
+    				display: block;
+    				transform: rotate(-75deg); /*逆时针旋转*/
+    				transform-origin: top; /*设置元素的运动的基点*/
+    				-ms-transform: rotate(-75deg); /* IE 9以上版本 */
+    				-ms-transform-origin: top;
+    			}
+
+    			td[class=first]:after {
+    				content: "";
+    				position: absolute;
+    				width: 1px;
+    				height: 75px;
+    				top: 0;
+    				left: 0;
+    				background-color: #000;
+    				display: block;
+    				transform: rotate(-45deg);
+    				transform-origin: top;
+    				-ms-transform: rotate(-45deg);
+    				-ms-transform-origin: top;
+    			}
+
+    	.title1 {
+    		position: absolute;
+    		top: 0px;
+    		right: 0px;
+    	}
+
+    	.title2 {
+    		position: absolute;
+    		top: 26px;
+    		right: 0px;
+    	}
+
+    	.title3 {
+    		position: absolute;
+    		top: 30px;
+    		left: 0px;
+    	}
+
+    	.auto-style1 {
+    		width: 122px;
+    	}
+
+    	.auto-style2 {
+    		width: 124px;
+    	}
+    </style>
+</head>  
+ 
+<body>  
+    <table>
+		<tr>
+			<td class="first" colspan="2"><span class="title1">科目</span><br><span class="title2">成绩</span><br><span class="title3">姓名</span></td>
+			<td>一</td>
+			<td class="auto-style2">二</td>
+			<td>三</td>
+			<td>四</td>
+			<td class="auto-style1">五</td>
+		</tr>
+
+		<tr>
+			<td rowspan="4" class="one">上午</td>
+			<td >1</td>
+			<td rowspan="2">中国古典舞身韵<br />
+                艺102</td>
+			<td rowspan="2" class="auto-style2">英语<br />
+                401</td>
+			<td rowspan="4">中国民族民间舞<br />
+                艺102</td>
+			<td rowspan="2">声乐基础<br />
+                艺202</td>
+			<td rowspan="2" class="auto-style1"></td>
+		</tr>
+
+		<tr>
+			<td>2</td>
+		</tr>
+
+		<tr>
+			<td>3</td>
+			<td rowspan="2">钢琴基础<br />
+                艺电钢</td>
+			<td rowspan="2" class="auto-style2"></td>
+			<td rowspan="2">中国古典舞身韵<br />
+                艺102</td>
+			<td rowspan="2" class="auto-style1">英语<br />
+                401</td>
+		</tr>
+
+		<tr>
+			<td>4</td>
+		</tr>
+
+		<tr>
+			<td rowspan="3" class="one">下午</td>
+			<td>5</td>
+			<td rowspan="2">体育与健康</td>
+			<td rowspan="2" class="auto-style2">形式与政策</td>
+			<td rowspan="3">马克思主义基本原理<br />
+                602</td>
+			<td rowspan="2">艺术实践</td>
+			<td rowspan="2" class="auto-style1">教育学<br />
+                阶二</td>
+		</tr>
+
+		<tr>
+			<td>6</td>
+		</tr>
+
+		<tr>
+			<td>7</td>
+			<td> </td>
+			<td class="auto-style2"></td>
+			<td></td>
+			<td class="auto-style1"></td>
+		</tr>
+
+		<tr>
+			<td class="one" rowspan="3" >晚上</td>
+			
+			<td>8</td>
+			<td rowspan="2"></td>
+			<td class="auto-style2" rowspan="2"></td>
+			<td rowspan="2"></td>
+			<td rowspan="2"></td>
+			<td rowspan="2"></td>
+		</tr>
+
+		<tr>
+			<td>9</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td></td>
+			<td class="auto-style2"></td>
+			<td></td>
+			<td></td>
+			<td class="auto-style1"></td>
+		</tr>
+
+		<tr>
+			<td class="one">任课教师</td>
+			<td colspan="3" class="two">马克思主义基本原理 54<br />教育学 36<br />
+                英语 72 刘炜<br />
+                体育与健康 36 聂芳芳<br />
+                中国古典舞身韵 72 刘永红</td>
+			<td colspan="3" class="two">钢琴基础 36 郭正航<br />
+                中国民族民间舞 72 外聘<br />
+                声乐基础 36 张旦丹<br />
+                艺术实践课 36</td>
+		</tr>
+	</table>
+</body>  
+</html>   

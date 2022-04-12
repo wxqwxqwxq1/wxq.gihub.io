@@ -1,0 +1,59 @@
+table {
+	border-collapse: collapse;
+}
+ 
+table, tr, td {
+	border: 1px solid black;
+}
+ 
+td {
+	text-align: center;
+	height: 50px; /*这里需要自己调整，根据自己的需求调整高度*/
+	position: relative;
+}
+td[class=first]{
+	width: 100px;
+}
+td[class=first]:before {  /*伪元素*/
+	content: "";
+    position: absolute;
+    width: 1px;  /*宽度为1相当于一条线*/
+    height: 104px;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    display: block;
+    transform: rotate(-75deg); /*逆时针旋转*/
+    transform-origin: top ; /*设置元素的运动的基点*/
+    -ms-transform: rotate(-75deg);/* IE 9以上版本 */
+    -ms-transform-origin: top;
+}
+td[class=first]:after {
+	content: "";
+    position: absolute;
+    width: 1px;
+    height: 75px;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    display: block;
+    transform: rotate(-45deg);
+    transform-origin: top;
+    -ms-transform: rotate(-45deg);
+    -ms-transform-origin: top;
+}
+.title1{
+	position: absolute;
+	top: 0px;
+	right:0px;
+}
+.title2{
+	position: absolute;
+	top: 26px;
+	right:0px;
+}
+.title3{
+	position: absolute;
+	top: 30px;
+	left:0px;
+}
