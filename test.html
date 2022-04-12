@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <!-- <html lang="en"> -->
 <head>
@@ -34,4 +35,42 @@ function password() {
 </script>
 
 </body>
+=======
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    用户名:<input type="text" id="username" value="">
+密码:<input type="password" id="password" value="">
+<button type="button" name="chkBtn" id="chkBtn">登录</button>
+</ body>
+<script>
+
+function password() {
+    var testV = 1;
+    var pass1 = prompt('Please input the password!','');
+    while (testV < 3) {
+    if (!pass1)
+    history.go(-1);
+    if (pass1 == "baizhuadmin") {
+    break;
+    }
+    testV+=1;
+    var pass1 =
+    prompt('Password error!');
+    }
+    if (pass1!="password" & testV ==3)
+    history.go(-1);
+    return " ";
+    }
+    document.write(password());
+</script>
+
+</body>
+>>>>>>> df82ab25955070d276772f9dca3cad6100c7bbee
 </html>
